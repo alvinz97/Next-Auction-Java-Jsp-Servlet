@@ -1,0 +1,47 @@
+.form-group input, .form-group select {
+    height: 30px;
+}
+
+.form-group option {
+    font-size: 15px;
+}
+
+#album .col-sm-4 {
+    width: 150;
+    height: 150;
+}
+#album .inner-div {
+    width: 120px;
+    height: 120px;
+    background-color: aquamarine;
+}
+#album input {
+    font-size: 8px;
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
+
+
+@media(min-width: 710px) {
+    #col-text {
+        font-size: 10px;
+    }
+}

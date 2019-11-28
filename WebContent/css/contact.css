@@ -1,0 +1,5 @@
+@charset "ISO-8859-1";
+
+form .col-md-6 input [type="text"] {
+	height: 50px;
+}

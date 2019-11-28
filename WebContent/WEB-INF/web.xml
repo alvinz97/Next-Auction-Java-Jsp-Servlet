@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Auction System</display-name>
+ 
+  <servlet>
+    <servlet-name>AddItemServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.AddItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCategoryServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.AddCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddPaymentServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.AddPaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>UpdateItemServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.UpdateItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateCategoryServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.UpdateCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePaymentServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.UpdatePaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.DeleteItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteCategoryServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.DeleteCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeletePaymentServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.DeletePaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>GetItemServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.GetItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCategoryServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.GetCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPaymentServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.GetPaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListItemServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.ListItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListCategoryServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.ListCategoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListPaymentServlet</servlet-name>
+    <servlet-class>oop.webApp.servlet.ListPaymentServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>AddItemServlet</servlet-name>
+    <url-pattern>/AddItemServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AddCategoryServlet</servlet-name>
+    <url-pattern>/AddCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPaymentServlet</servlet-name>
+    <url-pattern>/AddPaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateItemServlet</servlet-name>
+    <url-pattern>/UpdateItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCategoryServlet</servlet-name>
+    <url-pattern>/UpdateCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePaymentServlet</servlet-name>
+    <url-pattern>/UpdatePaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <url-pattern>/DeleteItemServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>DeleteCategoryServlet</servlet-name>
+    <url-pattern>/DeleteCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePaymentServlet</servlet-name>
+    <url-pattern>/DeletePaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>GetItemServlet</servlet-name>
+    <url-pattern>/GetItemServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>GetCategoryServlet</servlet-name>
+    <url-pattern>/GetCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPaymentServlet</servlet-name>
+    <url-pattern>/GetPaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>ListItemServlet</servlet-name>
+    <url-pattern>/ListItemServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListCategoryServlet</servlet-name>
+    <url-pattern>/ListCategoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListPaymentServlet</servlet-name>
+    <url-pattern>/ListPaymentServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>deleteCategory.jsp</welcome-file>
+    <welcome-file>deleteCategory.jsp</welcome-file>
+    <welcome-file>viewCategory.jsp</welcome-file>
+    <welcome-file>viewCategory.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
+</element>

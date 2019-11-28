@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Querys>
+
+	<!-- ITEM TABLE-->
+
+	<!-- Create table item Query -->
+	<query id="create_item_table">
+        <![CDATA[
+            CREATE TABLE item(
+            
+				itemNo varchar(10) not null ,
+				title varchar(50),
+				category varchar(50),
+				condition_ varchar(50),
+				brand varchar(50),
+				color varchar(50),
+				startDate varchar(20),
+				endDate varchar(20),
+				startPrice varchar(20),
+				buyPrice varchar(20),
+				reservePrice varchar(20),
+				desc_ varchar(1000),
+				
+				primary key(itemNo)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+<!--   	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS item 
+        ]]>
+	</query>
+-->
+	<!-- Select all customer orders Query -->
+	<query id="insert_item">
+        <![CDATA[
+          	insert into item (itemNo, title, category, condition_, brand, color, startDate, endDate, startPrice, buyPrice, reservePrice, desc_) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular item by id Query -->
+	<query id="item_by_id">
+         <![CDATA[        
+            select * from item where item.itemNo = ?
+        ]]>
+	</query>
+
+	<!-- Select all items -->
+	<query id="all_items">
+         <![CDATA[        
+            select * from item
+        ]]>
+	</query>
+
+	<!-- Delete a particular item by id Query -->
+	<query id="remove_item">
+         <![CDATA[        
+            delete from item where item.itemNo = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular item by id Query -->
+	<query id="update_item">
+         <![CDATA[        
+            update item as i 
+            set i.title = ?,  i.category = ?, i.condition_ = ?, i.brand = ?, i.color = ?, i.startDate = ?, i.endDate = ?, i.startPrice = ?, i.buyPrice = ?, i.reservePrice = ?, i.desc_ = ?
+            where i.itemNo = ?
+        ]]>
+	</query>
+	
+		<!-- Get item IDs Query -->
+	<query id="item_ids">
+         <![CDATA[        
+            select i.itemNo from item as i
+        ]]>
+	</query>
+	
+	
+	
+	
+	<!-- CATEGORY TABLE -->
+	
+	<!-- Create table category Query -->
+	<query id="create_category_table">
+        <![CDATA[
+            CREATE TABLE category(
+           
+			    catNo varchar(50) not null,
+			    catName varchar(100),
+			    subName varchar(100),
+			    
+			    primary key(catNo)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+ <!--   	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS category
+        ]]>
+	</query>
+-->
+	<!-- Select all customer orders Query -->
+	<query id="insert_category">
+        <![CDATA[
+          	insert into category (catNo, catName, subName) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular item by id Query -->
+	<query id="category_by_id">
+         <![CDATA[        
+            select * from category where category.catNo = ?
+        ]]>
+	</query>
+
+	<!-- Select all items -->
+	<query id="all_categorys">
+         <![CDATA[        
+            select * from category
+        ]]>
+	</query>
+
+	<!-- Delete a particular item by id Query -->
+	<query id="remove_category">
+         <![CDATA[        
+            delete from category where category.catNo = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular item by id Query -->
+	<query id="update_category">
+         <![CDATA[        
+            update category as c 
+            set c.catName = ?, c.subName = ?
+            where c.catNo = ?
+        ]]>
+	</query>
+	
+		<!-- Get item IDs Query -->
+	<query id="category_ids">
+         <![CDATA[        
+            select c.catNo from category as c
+        ]]>
+	</query>
+	
+	
+	
+	<!-- USER TABLE-->
+
+	<!-- Create table item Query -->
+ 	<query id="create_user_table">
+        <![CDATA[
+			CREATE TABLE user(
+            	uId varchar(50) not null,
+				uName varchar(10) ,
+				uMail varchar(50),
+				uPass varchar(50),
+				uR_Pass varchar(50),
+				
+				primary key(uId)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+<!--  	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS item 
+        ]]>
+	</query>
+-->
+	<!-- Select all customer orders Query -->
+	<query id="insert_user">
+        <![CDATA[
+          	insert into user (uId, uName, uMail, uPass, uR_Pass) 
+          	values (?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular item by id Query -->
+	<query id="user_by_id">
+         <![CDATA[        
+            select * from user where user.uId = ?
+        ]]>
+	</query>
+
+	<!-- Select all items -->
+	<query id="all_users">
+         <![CDATA[        
+            select * from user
+        ]]>
+	</query>
+
+	<!-- Delete a particular item by id Query -->
+	<query id="remove_user">
+         <![CDATA[        
+            delete from user where user.uId = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular item by id Query -->
+	<query id="update_user">
+         <![CDATA[        
+            update user as u 
+            set u.uName = ?,  u.uMail = ?, u.uPass = ?, u.uR_Pass = ?
+            where u.uId = ?
+        ]]>
+	</query>
+	
+		<!-- Get item IDs Query -->
+	<query id="item_ids">
+         <![CDATA[        
+            select u.uId from user as u
+        ]]>
+	</query>
+	
+	
+	
+	<!-- PAYMENT TABLE -->
+	
+	<!-- Create table item Query -->
+ 	<query id="create_payment_table">
+        <![CDATA[
+			CREATE TABLE payment (
+				id varchar(50) not null,
+			    cardNo varchar(20),
+			    cusName varchar(40),
+			    expiryDate varchar(20),
+			    cvv varchar(4),
+			    email varchar(100),
+			    amount varchar(1000),
+			    phone varchar(20),
+			    
+			    PRIMARY KEY(id)
+			)
+        ]]>
+	</query>
+
+	<!-- Select all customer orders Query -->
+	<query id="insert_payment">
+        <![CDATA[
+          	insert into payment (id, cardNo, cusName, expiryDate, cvv, email, amount, phone) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular item by id Query -->
+	<query id="payment_by_id">
+         <![CDATA[        
+            select * from payment where payment.id = ?
+        ]]>
+	</query>
+
+	<!-- Select all items -->
+	<query id="all_payment">
+         <![CDATA[        
+            select * from payment
+        ]]>
+	</query>
+
+	<!-- Delete a particular item by id Query -->
+	<query id="delete_payment">
+         <![CDATA[        
+            delete from payment where payment.id = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular item by id Query -->
+	<query id="update_payment">
+         <![CDATA[        
+            update payment as p 
+            set p.cardNo = ?,  p.cusName = ?, p.expiryDate = ?, p.cvv = ?, p.email = ?, p.amount = ?, p.phone = ?
+            where p.id = ?
+        ]]>
+	</query>
+	
+		<!-- Get item IDs Query -->
+	<query id="payment_ids">
+         <![CDATA[        
+            select p.id from payment as p
+        ]]>
+	</query>
+
+</Querys>

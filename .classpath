@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_191">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jtds-1.3.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre11-shaded.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre11.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre12-shaded.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre12.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre8-shaded.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mssql-jdbc-7.4.1.jre8.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-8.0.17.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/protobuf-java-2.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/catalina-storeconfig.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/ecj-4.12.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/jaspic-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-api.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-coyote.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-dbcp.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-cs.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-de.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-es.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-fr.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-ja.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-ko.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-pt-BR.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-ru.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-i18n-zh-CN.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-jdbc.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-jni.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-util-scan.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/tomcat-websocket.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/Server/apache-tomcat-9.0.22/lib/websocket-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
